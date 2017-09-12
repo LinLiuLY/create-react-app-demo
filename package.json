@@ -1,0 +1,22 @@
+{
+  "name": "create-react-app-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "start": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts start'",
+    "start:dev": "REACT_APP_ENV=dev npm start",
+    "start:staging": "REACT_APP_ENV=staging npm start",
+    "start:production": "REACT_APP_ENV=production npm start",
+    "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+    "build:dev": "REACT_APP_ENV=dev npm build",
+    "build:staging": "REACT_APP_ENV=staging npm build",
+    "build:production": "REACT_APP_ENV=production npm build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
